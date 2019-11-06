@@ -1,0 +1,461 @@
+/*-------------------١--------------------------*/
+/*                  ملحوظات                     */
+/*
+ملحوظة عامة:لقد  تركت لكم تعليقات لتساعدك علي تنظيم الملف بالشكل المثالي
+تأكد من أن آخر جزء هو الجزء الحاوي لكل ما هو متعلق بشكل الصفحة على الهواتف والتابلت
+إذا كان لديك أي سؤال من فضلك إرسل لي الكود وشرح المشكلة علي البريد الالكتروني
+tony@barmej.com
+*/
+/*----------------------------------------------*/
+
+@font-face {
+    font-family: 'web_site';
+    src: url('../fonts/AvenirNext-Regular.woff') format('woff2'),
+         url('../fonts/AvenirNext-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'web_site';
+    src: url('../fonts/AvenirNext-Bold.woff') format('woff2'),
+         url('../fonts/AvenirNext-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'web_site', sans-serif;
+  
+}
+
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+}
+/*----------------------١-----------------------*/
+/*
+Fonts & Font-faces سنقوم بوضع جميع الخطوط التي سنحتاجها هنا
+ملحوظة: إسم الخط هو إما
+Avenir Next 
+أو إن لم تجده فيمكنك استعمال خط 
+Lato
+*/
+/*---------------------------------------------*/
+
+
+/*----------------------٢-----------------------*/
+/*                  DEFAULTS                    */
+/*
+يجب عليك هنا وضع أي من الأنماط العامة الخاصة بوسوم مثل
+html, body, h1, h2, p 
+وهي الأنماط التي تنطبق على الموقع بشكل عام وكل صفحاته وليس على عنصر معين في صفحة معينة
+*/
+/*----------------------------------------------*/
+.widget__image{
+}
+.widgets{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    flex-direction: row;
+    align-items:center;
+    padding: 0;
+}
+
+.widget__desc{
+    background-color: #fff;
+    text-align:left;
+}
+.button {
+	border-radius:42px;
+    display:inline-block;
+    font-weight:bold;
+	font-size:18px;
+    text-decoration:none;
+	
+}
+.container{
+    margin: 0 auto;
+    padding: 1% 6%;
+    width: 100%;
+    }
+/* مصمم باستخدام هذا الموقع https://www.bestcssbuttongenerator.com */
+
+
+/*----------------------٣-----------------------*/
+/*               HELPER CLASSES                 */
+/*
+يجب عليك هنا وضع أي من الأنماط الخاصة بال
+classes
+التي ستقوم بإعادة إستخدامها في أكثر من مكان خلال عملك على الموقع 
+على سبيل المثال: النمط الخاص بالزر الأزرق الذي يستعمله المصمم في كل الصفحات تقريباً
+*/
+/*----------------------------------------------*/
+p{
+    
+}
+
+body{
+  
+}
+main{
+    height: auto;
+}
+section{ 
+    
+    height: auto;
+}
+a{
+    text-decoration:none;
+}
+
+
+/*----------------------٤-----------------------*/
+/*                    LAYOUT                    */
+/*                البناء العام للصفحة           */
+/*----------------------------------------------*/
+
+header .container{
+    border-bottom: 1px solid #EEF0FC;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 88%;
+    padding: 0px 2px;
+
+}
+.is-visible-mobile{
+    display: none;
+}
+.burger {
+    position: relative;
+    padding-left: 1.25em;
+    outline: none;
+    border: none;
+    background: none;
+  }
+  .burger:before {
+    content: "";
+    position: absolute;
+    top: 0.25em;
+    left: 0;
+    width: 1em;
+    height: 0.125em;
+    border-top: 0.375em double #000;
+    border-bottom: 0.125em solid #000;
+  }
+.main-nav ul{
+    display: flex;
+    
+}
+.main-nav ul li{
+margin-right: 10px;    
+}
+.main-nav a{
+    text-decoration:none;
+    color: #000f;
+}
+/*----------------------٥-----------------------*/
+/*                    HEADER                    */
+/*----------------------------------------------*/
+.hero .container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.hero__desc{
+    flex-shrink: 0;
+    flex-basis: 320px;
+    text-align: left;
+    align-items: center;
+}
+.hero__desc h1{
+font-size:36px;
+}
+.hero__desc p{
+    font-size: 16px;
+}
+.hero__image img{    
+width: 100%;
+
+}
+.hero__image{
+  flex-basis: 361px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+.hero .is-primary{
+    display: inline-block;
+    background-color:#3040C4;
+    color: #fff;
+    padding:20px 76px;
+    
+}
+/*----------------------٦-----------------------*/
+/*                     HERO                     */
+/*----------------------------------------------*/
+.meetYourMatch .meetYourMatchــcontent{
+}
+.meetYourMatchــcontent h2{
+position: relative;
+padding-top: 72px;
+padding-bottom: 28px;
+line-height: 49px;
+}
+.meetYourMatchــcontent{
+text-align: center;
+flex-direction: column;
+align-items: center;
+}
+.form-group{
+    
+}
+.form-group button{
+    padding-top: 1px;
+    border-radius: 41px;
+    background: #3040C4;
+    font-size:18px;
+    padding: 16px 5.6%;
+    color: #fff;
+}
+.form-group input{
+    background: #FFFFFF;
+    border: 1px solid #3040C4;
+    box-sizing: border-box;
+    border-radius: 41px;
+    padding:16px 9.5%;
+    margin-right: -100px;
+}
+form{
+    padding-bottom: 59px;
+}
+form img{
+    padding-bottom: 28px;
+}
+form span {
+    position: relative;
+    bottom: 49px;
+    padding: 0px 16px;
+}
+label input{
+    display:none;
+}
+.meetYourMatch__background{
+    background-color: #EEF0FC;
+    width: 100%;
+    height: 512px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 18px;
+    
+}
+.hero .container{
+    text-align: center;
+
+}
+.meetYourMatch .container{
+    
+    text-align: center;
+    position: relative;
+    padding: 0;
+    max-width: 95%;
+}
+
+/*----------------------٧-----------------------*/
+/*              MEET YOUR MATCH                 */
+/*----------------------------------------------*/
+
+.howItWorks .container{
+        text-align: center;
+}
+.howItWorks .widget__desc{
+    
+}
+.is-howItWorks h3{
+    text-align: center;
+}
+.is-howItWorks p{
+    width: 291px;
+    text-align: center;
+}
+.is-howItWorks{
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+/*----------------------٨-----------------------*/
+/*               HOW IT WORKS                   */
+/*----------------------------------------------*/
+.stories{
+    background: #F6F6F9;
+}
+.stories .container{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.stories .heading-paragraph{
+    width: 574px;
+    text-align: justify;
+    color: #5F5F80;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    display: inline;
+}
+.stories .widgets{
+    justify-content: space-between;
+}
+.stories .widget{
+    padding: 9px;
+    
+}
+.stories img{
+    width: 100%;
+}
+
+.stories .widget__desc{
+    background: #F6F6F9;
+}
+.stories h3{
+   font-weight: none;
+   font-style: none; 
+}
+/*----------------------٩-----------------------*/
+/*                 STORIES                      */
+/*----------------------------------------------*/
+.actions{
+background-color:#3040C4;
+padding: 10px;
+}
+.actions .container{
+    
+    color: #FFFFFF; 
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.actions h2{
+   text-align: center;
+   font-size: 29px;
+   align-items: center;
+   text-align: center;
+   line-height: 40px;
+   flex-basis: 100%;
+   
+}
+
+.actions .button{
+    background: #FFFFFF;
+    border-radius: 41px;
+    padding:16px 36px;
+    color: #3040C4;
+    margin: 0px 18px;
+    margin-bottom: 60px;
+    margin-top: 24px;
+}
+.actions .is-outline{
+border: 1px solid #FFFFFF;
+border-radius: 41px;
+background: #3040C4;
+color: #FFFFFF;
+padding:16px 25px;
+}
+
+/*----------------------١٠----------------------*/
+/*       Actions: Change A Life, Adopt A Pet    */
+/*----------------------------------------------*/
+footer .container{
+    display: flex;
+    justify-content: space-around;
+}
+footer .footer-nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+footer .item {
+    width: 23%
+}
+/*---------------------١١-----------------------*/
+/*                    FOOTER                    */
+/*----------------------------------------------*/
+
+@media (max-width:492px){
+    .meetYourMatch .container{
+        max-width: 100%;
+        
+    }
+    .actions .button{
+        padding: 16px 9%;
+        margin: 4px;
+        
+    }
+    .actions h2{
+        font-size: 20px;
+    }
+    .meetYourMatch__background{
+        top: -30px;
+        border-radius: 0px;
+        width: 100%;
+    }
+    .main-nav{
+        display: none;
+    }
+    .is-visible-mobile{
+        display: inline-block;
+    }
+    .is-howItWorks{
+        flex-wrap: wrap;
+    }
+    .stories .heading-paragraph{
+        width: 100%;
+        height: 58px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .copyrights{
+        width: 100%;
+    }
+    footer .container{
+        flex-wrap: wrap;
+    }
+    footer .item {
+        width: 46%;
+        margin: 0px;
+    }
+    .footer-nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero__image{
+        flex-basis: 100%;
+    }
+    footer{
+    padding-top: 58px;
+    }
+} 
+@media (max-width:1000px )and (min-width:480px){
+    .meetYourMatch .widget{
+        margin-right: 90px;
+        
+    }
+    .is-howItWorks{
+        padding: 0px 200px;
+    }
+   
+}
+/*----------------------١٢----------------------*/
+/*                    Responsive                */
+/*       كل ما هو متعلق بالهواتف والتابلت       */
+/*----------------------------------------------*/
